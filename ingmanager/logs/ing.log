@@ -1,0 +1,2409 @@
+2020-07-17 18:39:50.236  INFO LIV19424 [           main] i.r.i.IngManagerApplication              : Starting IngManagerApplication v1.2.0 on LIV19424 with PID 17604 (C:\fsb\ingmanager\ingmanager.jar started by g.portnoi in C:\fsb\ingmanager)
+2020-07-17 18:39:50.283 DEBUG LIV19424 [           main] i.r.i.IngManagerApplication              : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-07-17 18:39:50.284  INFO LIV19424 [           main] i.r.i.IngManagerApplication              : The following profiles are active: dev
+2020-07-17 18:39:52.059  INFO LIV19424 [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-07-17 18:39:52.114  INFO LIV19424 [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38ms. Found 0 repository interfaces.
+2020-07-17 18:39:52.772  INFO LIV19424 [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$de99d2f4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-17 18:39:54.354  INFO LIV19424 [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 20580 (http)
+2020-07-17 18:39:54.402  INFO LIV19424 [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-127.0.0.1-20580"]
+2020-07-17 18:39:54.419  INFO LIV19424 [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2020-07-17 18:39:54.420  INFO LIV19424 [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2020-07-17 18:39:54.564  INFO LIV19424 [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-07-17 18:39:54.564  INFO LIV19424 [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 4156 ms
+2020-07-17 18:39:54.897  INFO LIV19424 [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2020-07-17 18:39:55.185  INFO LIV19424 [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2020-07-17 18:39:55.318  INFO LIV19424 [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-07-17 18:39:55.474  INFO LIV19424 [           main] o.h.Version                              : HHH000412: Hibernate Core {5.3.12.Final}
+2020-07-17 18:39:55.477  INFO LIV19424 [           main] o.h.c.Environment                        : HHH000206: hibernate.properties not found
+2020-07-17 18:39:55.775  INFO LIV19424 [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-07-17 18:39:56.232  INFO LIV19424 [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-07-17 18:39:56.670  INFO LIV19424 [           main] o.h.t.s.i.SchemaCreatorImpl              : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@7a6d7e92'
+2020-07-17 18:39:56.677  INFO LIV19424 [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-17 18:39:57.414  INFO LIV19424 [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-17 18:39:57.534  WARN LIV19424 [           main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-17 18:39:58.180  INFO LIV19424 [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-127.0.0.1-20580"]
+2020-07-17 18:39:58.236  INFO LIV19424 [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 20580 (http) with context path ''
+2020-07-17 18:39:58.240  INFO LIV19424 [           main] i.r.i.IngManagerApplication              : Started IngManagerApplication in 8.702 seconds (JVM running for 10.72)
+2020-07-17 18:40:03.461  INFO LIV19424 [.1-20580-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-17 18:40:03.461  INFO LIV19424 [.1-20580-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2020-07-17 18:40:03.485  INFO LIV19424 [.1-20580-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 24 ms
+2020-07-17 18:40:03.689  INFO LIV19424 [.1-20580-exec-1] i.r.i.m.InputOutputMonitor               : Request - Method: ResponseEntity it.reply.ingmanager.server.TransactionsApiController.transactions() Values: 
+2020-07-17 18:40:04.012  INFO LIV19424 [.1-20580-exec-1] i.r.i.m.InputOutputMonitor               : Response - <200 OK OK,class TransactionsResponse {
+    class Response {
+        code: 200
+        message: OK
+        details: null
+    }
+    transactionsList: [class TransactionRecord {
+        id: 62317423-67c9-4401-8380-2d369eb4d6c2
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 15.242076831684532
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX1230
+            name: Creditor 1230
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX9870
+            name: DebtorName 9870
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 13.856433483349573
+        update: 2020-07-17T16:40:03.832+0000
+        description: Mc Donalds Amsterdam transaction - 0
+    }, class TransactionRecord {
+        id: f524399e-2f8f-4710-be48-204957f96626
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 41.39618620360035
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX1231
+            name: Creditor 1231
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX9871
+            name: DebtorName 9871
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 37.63289654872759
+        update: 2020-07-17T16:40:03.849+0000
+        description: Mc Donalds Amsterdam transaction - 1
+    }, class TransactionRecord {
+        id: eef59a08-e49d-4ad9-81bc-8c3ee369c3fa
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 17.787632791047407
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX1232
+            name: Creditor 1232
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX9872
+            name: DebtorName 9872
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 16.17057526458855
+        update: 2020-07-17T16:40:03.850+0000
+        description: Mc Donalds Amsterdam transaction - 2
+    }, class TransactionRecord {
+        id: 564fd0fd-fb5b-4609-b6e3-9bc4aad6114f
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 79.4372028868892
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX1233
+            name: Creditor 1233
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX9873
+            name: DebtorName 9873
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 72.21563898808108
+        update: 2020-07-17T16:40:03.850+0000
+        description: Mc Donalds Amsterdam transaction - 3
+    }, class TransactionRecord {
+        id: bfc177d6-852d-40b8-80cf-d954bb6ffe7a
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 101.86602498771506
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX1234
+            name: Creditor 1234
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX9874
+            name: DebtorName 9874
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 92.60547726155914
+        update: 2020-07-17T16:40:03.850+0000
+        description: Mc Donalds Amsterdam transaction - 4
+    }, class TransactionRecord {
+        id: 776cbc30-719e-437e-8f39-61caadd5f306
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 17.428369010907133
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX1235
+            name: Creditor 1235
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX9875
+            name: DebtorName 9875
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 15.843971828097391
+        update: 2020-07-17T16:40:03.850+0000
+        description: Mc Donalds Amsterdam transaction - 5
+    }, class TransactionRecord {
+        id: e78a31c0-6b9b-4a23-b680-b50bccb1051f
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 79.9891231419176
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX1236
+            name: Creditor 1236
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX9876
+            name: DebtorName 9876
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 72.71738467447054
+        update: 2020-07-17T16:40:03.850+0000
+        description: Mc Donalds Amsterdam transaction - 6
+    }, class TransactionRecord {
+        id: f04f50c8-4ebd-4318-a97d-a27a70d1f487
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 30.77370637774808
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX1237
+            name: Creditor 1237
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX9877
+            name: DebtorName 9877
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 27.97609670704371
+        update: 2020-07-17T16:40:03.850+0000
+        description: Mc Donalds Amsterdam transaction - 7
+    }, class TransactionRecord {
+        id: d38086b9-54bb-4c67-a4e0-39fc78838932
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 62.49084772981774
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX1238
+            name: Creditor 1238
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX9878
+            name: DebtorName 9878
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 56.80986157256157
+        update: 2020-07-17T16:40:03.851+0000
+        description: Mc Donalds Amsterdam transaction - 8
+    }, class TransactionRecord {
+        id: 47346c40-eae4-4415-9669-86ce7ba56f1f
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 23.252643003129737
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX1239
+            name: Creditor 1239
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX9879
+            name: DebtorName 9879
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 21.138766366481576
+        update: 2020-07-17T16:40:03.851+0000
+        description: Mc Donalds Amsterdam transaction - 9
+    }, class TransactionRecord {
+        id: 6b0050e1-f28e-4e02-acf1-0b97e250d233
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 22.207024918349177
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12310
+            name: Creditor 12310
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98710
+            name: DebtorName 98710
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 20.188204471226523
+        update: 2020-07-17T16:40:03.851+0000
+        description: Mc Donalds Amsterdam transaction - 10
+    }, class TransactionRecord {
+        id: d6a3a687-24cd-414c-af0d-a85afa43d876
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 52.7414676187905
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12311
+            name: Creditor 12311
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98711
+            name: DebtorName 98711
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 47.946788744355
+        update: 2020-07-17T16:40:03.851+0000
+        description: Mc Donalds Amsterdam transaction - 11
+    }, class TransactionRecord {
+        id: 8f8bad10-2732-4c80-8824-d15cd3fc857c
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 74.35169505418645
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12312
+            name: Creditor 12312
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98712
+            name: DebtorName 98712
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 67.5924500492604
+        update: 2020-07-17T16:40:03.851+0000
+        description: Mc Donalds Amsterdam transaction - 12
+    }, class TransactionRecord {
+        id: 6022d308-353f-4dd9-94f8-17383427d00c
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 53.35062407904536
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12313
+            name: Creditor 12313
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98713
+            name: DebtorName 98713
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 48.500567344586685
+        update: 2020-07-17T16:40:03.851+0000
+        description: Mc Donalds Amsterdam transaction - 13
+    }, class TransactionRecord {
+        id: 2b439077-1c54-4ba2-a737-73c31073be04
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 4.896356006683849
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12314
+            name: Creditor 12314
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98714
+            name: DebtorName 98714
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 4.451232733348953
+        update: 2020-07-17T16:40:03.851+0000
+        description: Mc Donalds Amsterdam transaction - 14
+    }, class TransactionRecord {
+        id: 38d30912-4aa6-4fd7-a025-7e3a22a05ec1
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 10.62482716104326
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12315
+            name: Creditor 12315
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98715
+            name: DebtorName 98715
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 9.6589337827666
+        update: 2020-07-17T16:40:03.851+0000
+        description: Mc Donalds Amsterdam transaction - 15
+    }, class TransactionRecord {
+        id: bef72b7f-180f-40cb-9b6a-55da1ad048b1
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 16.765114033532665
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12316
+            name: Creditor 12316
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98716
+            name: DebtorName 98716
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 15.241012757756966
+        update: 2020-07-17T16:40:03.852+0000
+        description: Mc Donalds Amsterdam transaction - 16
+    }, class TransactionRecord {
+        id: 0090f282-417c-4080-8a22-7c6e872dba67
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 103.99989753281325
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12317
+            name: Creditor 12317
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98717
+            name: DebtorName 98717
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 94.54536139346658
+        update: 2020-07-17T16:40:03.852+0000
+        description: Mc Donalds Amsterdam transaction - 17
+    }, class TransactionRecord {
+        id: e3dde105-b8c2-49ac-bbc1-98f1370d31c1
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 25.39766824241092
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12318
+            name: Creditor 12318
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98718
+            name: DebtorName 98718
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 23.088789311282653
+        update: 2020-07-17T16:40:03.852+0000
+        description: Mc Donalds Amsterdam transaction - 18
+    }, class TransactionRecord {
+        id: af183171-1d6f-4327-ab7c-ce121a8311db
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 77.33586610278412
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12319
+            name: Creditor 12319
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98719
+            name: DebtorName 98719
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 70.30533282071283
+        update: 2020-07-17T16:40:03.852+0000
+        description: Mc Donalds Amsterdam transaction - 19
+    }, class TransactionRecord {
+        id: b7fafa34-e325-4c71-b3cb-7cc960fb0d33
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 52.95126584871833
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12320
+            name: Creditor 12320
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98720
+            name: DebtorName 98720
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 48.13751440792575
+        update: 2020-07-17T16:40:03.852+0000
+        description: Mc Donalds Amsterdam transaction - 20
+    }, class TransactionRecord {
+        id: 0e821ea0-1145-4861-b7ac-f93803cb3a9e
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 80.0956833921805
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12321
+            name: Creditor 12321
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98721
+            name: DebtorName 98721
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 72.814257629255
+        update: 2020-07-17T16:40:03.852+0000
+        description: Mc Donalds Amsterdam transaction - 21
+    }, class TransactionRecord {
+        id: 1d056571-1553-42a1-8434-bf383b75f24f
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 53.329109148227396
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12322
+            name: Creditor 12322
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98722
+            name: DebtorName 98722
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 48.48100831657035
+        update: 2020-07-17T16:40:03.852+0000
+        description: Mc Donalds Amsterdam transaction - 22
+    }, class TransactionRecord {
+        id: 351c5c4d-b833-48d8-94ee-63ec58bb9454
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 3.8760922321191775
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12323
+            name: Creditor 12323
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98723
+            name: DebtorName 98723
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 3.5237202110174337
+        update: 2020-07-17T16:40:03.853+0000
+        description: Mc Donalds Amsterdam transaction - 23
+    }, class TransactionRecord {
+        id: 4049bbe6-6dcf-4986-95f4-ff06727da30b
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 76.02181774048536
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12324
+            name: Creditor 12324
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98724
+            name: DebtorName 98724
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 69.11074340044124
+        update: 2020-07-17T16:40:03.853+0000
+        description: Mc Donalds Amsterdam transaction - 24
+    }, class TransactionRecord {
+        id: ae604b7b-e5cc-4534-8b79-f5a207eab733
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 13.50445616137398
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12325
+            name: Creditor 12325
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98725
+            name: DebtorName 98725
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 12.276778328521798
+        update: 2020-07-17T16:40:03.853+0000
+        description: Mc Donalds Amsterdam transaction - 25
+    }, class TransactionRecord {
+        id: 14c58aae-d486-4c83-bc27-9a179712b82c
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 8.584551216135132
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12326
+            name: Creditor 12326
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98726
+            name: DebtorName 98726
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 7.804137469213757
+        update: 2020-07-17T16:40:03.853+0000
+        description: Mc Donalds Amsterdam transaction - 26
+    }, class TransactionRecord {
+        id: 63fe5943-b8bf-4908-af5d-c65be7fb25b0
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 14.993829273389762
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12327
+            name: Creditor 12327
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98727
+            name: DebtorName 98727
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 13.630753884899782
+        update: 2020-07-17T16:40:03.853+0000
+        description: Mc Donalds Amsterdam transaction - 27
+    }, class TransactionRecord {
+        id: e372f49b-7b3f-4e92-9113-f8602dd1b610
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 41.56850308979431
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12328
+            name: Creditor 12328
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98728
+            name: DebtorName 98728
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 37.78954826344937
+        update: 2020-07-17T16:40:03.853+0000
+        description: Mc Donalds Amsterdam transaction - 28
+    }, class TransactionRecord {
+        id: d40bc2a7-e5e5-4a62-b6f6-e4d43b19a827
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 52.21797386566532
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12329
+            name: Creditor 12329
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98729
+            name: DebtorName 98729
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 47.470885332423016
+        update: 2020-07-17T16:40:03.853+0000
+        description: Mc Donalds Amsterdam transaction - 29
+    }, class TransactionRecord {
+        id: 26736ade-8483-4a9b-82af-80e78bf73cf4
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 82.47340014751398
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12330
+            name: Creditor 12330
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98730
+            name: DebtorName 98730
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 74.9758183159218
+        update: 2020-07-17T16:40:03.854+0000
+        description: Mc Donalds Amsterdam transaction - 30
+    }, class TransactionRecord {
+        id: 06943020-8885-4b18-9b58-9b81b9f858e8
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 97.36736343677816
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12331
+            name: Creditor 12331
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98731
+            name: DebtorName 98731
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 88.5157849425256
+        update: 2020-07-17T16:40:03.854+0000
+        description: Mc Donalds Amsterdam transaction - 31
+    }, class TransactionRecord {
+        id: b39fae09-b96f-49e2-9f9a-e0045710a666
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 1.3479154833269702
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12332
+            name: Creditor 12332
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98732
+            name: DebtorName 98732
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 1.2253777121154275
+        update: 2020-07-17T16:40:03.854+0000
+        description: Mc Donalds Amsterdam transaction - 32
+    }, class TransactionRecord {
+        id: 5b86a262-8d04-457a-b2a3-b6dd46e2c306
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 50.93366935862273
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12333
+            name: Creditor 12333
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98733
+            name: DebtorName 98733
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 46.303335780566115
+        update: 2020-07-17T16:40:03.854+0000
+        description: Mc Donalds Amsterdam transaction - 33
+    }, class TransactionRecord {
+        id: 1c49848a-cebc-4a3e-b9dc-fd3e7a02d75a
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 30.066919942454444
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12334
+            name: Creditor 12334
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98734
+            name: DebtorName 98734
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 27.333563584049493
+        update: 2020-07-17T16:40:03.854+0000
+        description: Mc Donalds Amsterdam transaction - 34
+    }, class TransactionRecord {
+        id: 78520d9d-4585-44a1-8f7f-58d88a6516a1
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 73.21999292097533
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12335
+            name: Creditor 12335
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98735
+            name: DebtorName 98735
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 66.56362992815939
+        update: 2020-07-17T16:40:03.854+0000
+        description: Mc Donalds Amsterdam transaction - 35
+    }, class TransactionRecord {
+        id: 08b0504c-364d-4253-adc8-6ae9d45a594b
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 13.056102993462225
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12336
+            name: Creditor 12336
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98736
+            name: DebtorName 98736
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 11.869184539511114
+        update: 2020-07-17T16:40:03.854+0000
+        description: Mc Donalds Amsterdam transaction - 36
+    }, class TransactionRecord {
+        id: b33450f1-7de8-4298-984f-ab6a60d9243d
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 40.98221256908971
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12337
+            name: Creditor 12337
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98737
+            name: DebtorName 98737
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 37.256556880990644
+        update: 2020-07-17T16:40:03.854+0000
+        description: Mc Donalds Amsterdam transaction - 37
+    }, class TransactionRecord {
+        id: 31236811-958c-415b-aa2a-b8a56feefd32
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 22.7828021465199
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12338
+            name: Creditor 12338
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98738
+            name: DebtorName 98738
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 20.71163831501809
+        update: 2020-07-17T16:40:03.855+0000
+        description: Mc Donalds Amsterdam transaction - 38
+    }, class TransactionRecord {
+        id: 529422ac-d217-4c9f-9c04-97898d43e29d
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 38.786897209867256
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12339
+            name: Creditor 12339
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98739
+            name: DebtorName 98739
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 35.260815645333864
+        update: 2020-07-17T16:40:03.855+0000
+        description: Mc Donalds Amsterdam transaction - 39
+    }, class TransactionRecord {
+        id: 495e0f12-531d-4b66-b27e-35ff5a5dc00b
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 90.12210943837917
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12340
+            name: Creditor 12340
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98740
+            name: DebtorName 98740
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 81.92919039852652
+        update: 2020-07-17T16:40:03.855+0000
+        description: Mc Donalds Amsterdam transaction - 40
+    }, class TransactionRecord {
+        id: 1cb32a31-03b8-44bf-8aaa-65d0857f477e
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 100.75551815863031
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12341
+            name: Creditor 12341
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98741
+            name: DebtorName 98741
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 91.59592559875482
+        update: 2020-07-17T16:40:03.855+0000
+        description: Mc Donalds Amsterdam transaction - 41
+    }, class TransactionRecord {
+        id: dc63f531-3ea9-4a9e-b54b-fedc4b8a7a10
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 44.64390486794606
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12342
+            name: Creditor 12342
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98742
+            name: DebtorName 98742
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 40.585368061769145
+        update: 2020-07-17T16:40:03.855+0000
+        description: Mc Donalds Amsterdam transaction - 42
+    }, class TransactionRecord {
+        id: e0721e35-5970-4cc9-a14a-8c9c40180607
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 54.504812019129616
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12343
+            name: Creditor 12343
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98743
+            name: DebtorName 98743
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 49.54982910829965
+        update: 2020-07-17T16:40:03.855+0000
+        description: Mc Donalds Amsterdam transaction - 43
+    }, class TransactionRecord {
+        id: 95f4ba4f-08be-41f6-af00-a418ad89dad9
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 72.82266518370189
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12344
+            name: Creditor 12344
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98744
+            name: DebtorName 98744
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 66.20242289427443
+        update: 2020-07-17T16:40:03.856+0000
+        description: Mc Donalds Amsterdam transaction - 44
+    }, class TransactionRecord {
+        id: b8721a97-2a1d-48ed-8279-c5871b736ba4
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 96.9583686274997
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12345
+            name: Creditor 12345
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98745
+            name: DebtorName 98745
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 88.14397147954517
+        update: 2020-07-17T16:40:03.856+0000
+        description: Mc Donalds Amsterdam transaction - 45
+    }, class TransactionRecord {
+        id: c44bcc29-eff1-47e8-bb63-95525b803c86
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 103.4889631748126
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12346
+            name: Creditor 12346
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98746
+            name: DebtorName 98746
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 94.08087561346599
+        update: 2020-07-17T16:40:03.856+0000
+        description: Mc Donalds Amsterdam transaction - 46
+    }, class TransactionRecord {
+        id: 87487055-1f46-48e0-9fc9-03d1da2d9485
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 62.18422811287602
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12347
+            name: Creditor 12347
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98747
+            name: DebtorName 98747
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 56.53111646625092
+        update: 2020-07-17T16:40:03.856+0000
+        description: Mc Donalds Amsterdam transaction - 47
+    }, class TransactionRecord {
+        id: 24e54627-deca-4f66-9637-f05425c9f894
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 67.83072995885006
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12348
+            name: Creditor 12348
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98748
+            name: DebtorName 98748
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 61.66429996259096
+        update: 2020-07-17T16:40:03.856+0000
+        description: Mc Donalds Amsterdam transaction - 48
+    }, class TransactionRecord {
+        id: 66e7f926-e9fc-4fc7-ba95-c3407c11212d
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 42.11426298708244
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12349
+            name: Creditor 12349
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98749
+            name: DebtorName 98749
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 38.2856936246204
+        update: 2020-07-17T16:40:03.856+0000
+        description: Mc Donalds Amsterdam transaction - 49
+    }, class TransactionRecord {
+        id: da084986-1594-49ec-9511-cab3b3551726
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 19.692339322588243
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12350
+            name: Creditor 12350
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98750
+            name: DebtorName 98750
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 17.9021266568984
+        update: 2020-07-17T16:40:03.856+0000
+        description: Mc Donalds Amsterdam transaction - 50
+    }, class TransactionRecord {
+        id: c3c29acd-3a60-40d2-bf90-c85fc007665b
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 43.75000172445672
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12351
+            name: Creditor 12351
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98751
+            name: DebtorName 98751
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 39.7727288404152
+        update: 2020-07-17T16:40:03.862+0000
+        description: Mc Donalds Amsterdam transaction - 51
+    }, class TransactionRecord {
+        id: 9c40d079-f8e9-41b2-b4ba-baa15420b94d
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 67.5586948235157
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12352
+            name: Creditor 12352
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98752
+            name: DebtorName 98752
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 61.41699529410517
+        update: 2020-07-17T16:40:03.863+0000
+        description: Mc Donalds Amsterdam transaction - 52
+    }, class TransactionRecord {
+        id: 90a3a78f-35cb-4c4a-9932-7afb4a1574c3
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 84.80102997884181
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12353
+            name: Creditor 12353
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98753
+            name: DebtorName 98753
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 77.09184543531073
+        update: 2020-07-17T16:40:03.863+0000
+        description: Mc Donalds Amsterdam transaction - 53
+    }, class TransactionRecord {
+        id: d2386174-bd74-4b4a-bbb8-7c2ac1ffdf6f
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 99.66666024310544
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12354
+            name: Creditor 12354
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98754
+            name: DebtorName 98754
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 90.60605476645948
+        update: 2020-07-17T16:40:03.863+0000
+        description: Mc Donalds Amsterdam transaction - 54
+    }, class TransactionRecord {
+        id: cab317ba-4658-4fa6-b3dd-e9ee337bedbe
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 56.39991031821833
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12355
+            name: Creditor 12355
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98755
+            name: DebtorName 98755
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 51.27264574383484
+        update: 2020-07-17T16:40:03.864+0000
+        description: Mc Donalds Amsterdam transaction - 55
+    }, class TransactionRecord {
+        id: 2083605f-34a7-48be-9251-f102226849b1
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 3.3425287154382324
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12356
+            name: Creditor 12356
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98756
+            name: DebtorName 98756
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 3.038662468580211
+        update: 2020-07-17T16:40:03.864+0000
+        description: Mc Donalds Amsterdam transaction - 56
+    }, class TransactionRecord {
+        id: d9b10375-470c-4c8d-9bcf-fa2f446debad
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 36.07411001205867
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12357
+            name: Creditor 12357
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98757
+            name: DebtorName 98757
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 32.79464546550788
+        update: 2020-07-17T16:40:03.864+0000
+        description: Mc Donalds Amsterdam transaction - 57
+    }, class TransactionRecord {
+        id: 4df4d998-cccc-478b-9d3a-a01809f58007
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 59.576515268148455
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12358
+            name: Creditor 12358
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98758
+            name: DebtorName 98758
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 54.1604684255895
+        update: 2020-07-17T16:40:03.865+0000
+        description: Mc Donalds Amsterdam transaction - 58
+    }, class TransactionRecord {
+        id: 49d704c1-233b-4d18-bc94-4a6079c2945c
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 90.23188859864091
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12359
+            name: Creditor 12359
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98759
+            name: DebtorName 98759
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 82.02898963512808
+        update: 2020-07-17T16:40:03.865+0000
+        description: Mc Donalds Amsterdam transaction - 59
+    }, class TransactionRecord {
+        id: 5892d0ba-5b91-413c-a4e4-82100e62d712
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 7.6363036220197005
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12360
+            name: Creditor 12360
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98760
+            name: DebtorName 98760
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 6.942094201836091
+        update: 2020-07-17T16:40:03.865+0000
+        description: Mc Donalds Amsterdam transaction - 60
+    }, class TransactionRecord {
+        id: cb4733e0-5be5-4959-97f5-db962fffb5a1
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 78.455434436376
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12361
+            name: Creditor 12361
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98761
+            name: DebtorName 98761
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 71.32312221488726
+        update: 2020-07-17T16:40:03.865+0000
+        description: Mc Donalds Amsterdam transaction - 61
+    }, class TransactionRecord {
+        id: a7f938c6-562b-4855-b020-d3bd79eb7c18
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 76.28316081677447
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12362
+            name: Creditor 12362
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98762
+            name: DebtorName 98762
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 69.3483280152495
+        update: 2020-07-17T16:40:03.865+0000
+        description: Mc Donalds Amsterdam transaction - 62
+    }, class TransactionRecord {
+        id: eff8da3d-80ab-4c0b-b50a-542a29aedec5
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 36.5293212708263
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12363
+            name: Creditor 12363
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98763
+            name: DebtorName 98763
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 33.208473882569365
+        update: 2020-07-17T16:40:03.866+0000
+        description: Mc Donalds Amsterdam transaction - 63
+    }, class TransactionRecord {
+        id: 07721a52-543b-4e28-a524-a3d452b4bfec
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 9.946961232904535
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12364
+            name: Creditor 12364
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98764
+            name: DebtorName 98764
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 9.042692029913212
+        update: 2020-07-17T16:40:03.866+0000
+        description: Mc Donalds Amsterdam transaction - 64
+    }, class TransactionRecord {
+        id: 5fd72bd9-bd76-4a03-b056-2c1141b5489e
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 82.72313418277284
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12365
+            name: Creditor 12365
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98765
+            name: DebtorName 98765
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 75.2028492570662
+        update: 2020-07-17T16:40:03.866+0000
+        description: Mc Donalds Amsterdam transaction - 65
+    }, class TransactionRecord {
+        id: e94a7f52-ab83-4cdd-8c3e-60fa0bc69776
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 57.56951548417211
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12366
+            name: Creditor 12366
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98766
+            name: DebtorName 98766
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 52.335923167429186
+        update: 2020-07-17T16:40:03.866+0000
+        description: Mc Donalds Amsterdam transaction - 66
+    }, class TransactionRecord {
+        id: a84109f7-6b7c-41da-a573-925fdfc5ee16
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 97.96995926425146
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12367
+            name: Creditor 12367
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98767
+            name: DebtorName 98767
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 89.06359933113768
+        update: 2020-07-17T16:40:03.866+0000
+        description: Mc Donalds Amsterdam transaction - 67
+    }, class TransactionRecord {
+        id: 029f3f33-84ce-4b27-ac7f-55b51bec002a
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 59.237302730382545
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12368
+            name: Creditor 12368
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98768
+            name: DebtorName 98768
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 53.85209339125686
+        update: 2020-07-17T16:40:03.866+0000
+        description: Mc Donalds Amsterdam transaction - 68
+    }, class TransactionRecord {
+        id: 7933c340-9f56-4eb9-b8ac-9234046b74f9
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 62.532320010407815
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12369
+            name: Creditor 12369
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98769
+            name: DebtorName 98769
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 56.84756364582528
+        update: 2020-07-17T16:40:03.866+0000
+        description: Mc Donalds Amsterdam transaction - 69
+    }, class TransactionRecord {
+        id: 383fd78d-81e4-414a-a97d-148eda7f62e7
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 72.16146471852394
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12370
+            name: Creditor 12370
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98770
+            name: DebtorName 98770
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 65.60133156229449
+        update: 2020-07-17T16:40:03.867+0000
+        description: Mc Donalds Amsterdam transaction - 70
+    }, class TransactionRecord {
+        id: 40c7e0ab-3aad-4cf6-9b5a-9096a65b099c
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 66.03771249793338
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12371
+            name: Creditor 12371
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98771
+            name: DebtorName 98771
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 60.03428408903035
+        update: 2020-07-17T16:40:03.867+0000
+        description: Mc Donalds Amsterdam transaction - 71
+    }, class TransactionRecord {
+        id: 64573a84-fb60-43c0-8c10-42d80f4dc39a
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 31.960752846705304
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12372
+            name: Creditor 12372
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98772
+            name: DebtorName 98772
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 29.055229860641184
+        update: 2020-07-17T16:40:03.867+0000
+        description: Mc Donalds Amsterdam transaction - 72
+    }, class TransactionRecord {
+        id: dbddd9bb-1266-42e2-b23d-23ebb2f733fe
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 27.629593626420384
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12373
+            name: Creditor 12373
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98773
+            name: DebtorName 98773
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 25.117812387654894
+        update: 2020-07-17T16:40:03.868+0000
+        description: Mc Donalds Amsterdam transaction - 73
+    }, class TransactionRecord {
+        id: e81ad5b8-297e-4b5c-912b-e34845779339
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 71.9658388693259
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12374
+            name: Creditor 12374
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98774
+            name: DebtorName 98774
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 65.42348988120537
+        update: 2020-07-17T16:40:03.868+0000
+        description: Mc Donalds Amsterdam transaction - 74
+    }, class TransactionRecord {
+        id: 71405fa6-daf1-49f7-9289-1791661e980b
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 65.86770725497729
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12375
+            name: Creditor 12375
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98775
+            name: DebtorName 98775
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 59.87973386816117
+        update: 2020-07-17T16:40:03.868+0000
+        description: Mc Donalds Amsterdam transaction - 75
+    }, class TransactionRecord {
+        id: f07cf699-d56b-4056-b57c-8a2b4bad6e74
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 99.76438258836943
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12376
+            name: Creditor 12376
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98776
+            name: DebtorName 98776
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 90.69489326215403
+        update: 2020-07-17T16:40:03.868+0000
+        description: Mc Donalds Amsterdam transaction - 76
+    }, class TransactionRecord {
+        id: 08b00ef1-ef96-4e6a-9ed6-41057f21ab3c
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 23.093771162132825
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12377
+            name: Creditor 12377
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98777
+            name: DebtorName 98777
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 20.994337420120747
+        update: 2020-07-17T16:40:03.869+0000
+        description: Mc Donalds Amsterdam transaction - 77
+    }, class TransactionRecord {
+        id: 9dfa6def-a8e7-4d78-aaa9-e44cf8d6f52b
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 44.28721792315765
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12378
+            name: Creditor 12378
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98778
+            name: DebtorName 98778
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 40.26110720287058
+        update: 2020-07-17T16:40:03.869+0000
+        description: Mc Donalds Amsterdam transaction - 78
+    }, class TransactionRecord {
+        id: bc9e235b-e23d-4420-a913-01a2e9c7c18d
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 4.643694586833588
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12379
+            name: Creditor 12379
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98779
+            name: DebtorName 98779
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 4.221540533485079
+        update: 2020-07-17T16:40:03.869+0000
+        description: Mc Donalds Amsterdam transaction - 79
+    }, class TransactionRecord {
+        id: 8d907808-b6d6-403b-9044-0a3a3a9c8d7b
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 54.20737860079001
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12380
+            name: Creditor 12380
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98780
+            name: DebtorName 98780
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 49.27943509162728
+        update: 2020-07-17T16:40:03.869+0000
+        description: Mc Donalds Amsterdam transaction - 80
+    }, class TransactionRecord {
+        id: 63ee6005-eba2-49b7-86ab-013cd499c2a3
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 14.64288194374467
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12381
+            name: Creditor 12381
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98781
+            name: DebtorName 98781
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 13.311710857949699
+        update: 2020-07-17T16:40:03.870+0000
+        description: Mc Donalds Amsterdam transaction - 81
+    }, class TransactionRecord {
+        id: 0f481743-4759-4ec7-ba10-7a2b96b80021
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 10.564990050055634
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12382
+            name: Creditor 12382
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98782
+            name: DebtorName 98782
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 9.604536409141485
+        update: 2020-07-17T16:40:03.870+0000
+        description: Mc Donalds Amsterdam transaction - 82
+    }, class TransactionRecord {
+        id: 702ae117-a14e-4b0e-b9c4-66cb008bbf63
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 76.4930497000473
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12383
+            name: Creditor 12383
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98783
+            name: DebtorName 98783
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 69.53913609095208
+        update: 2020-07-17T16:40:03.870+0000
+        description: Mc Donalds Amsterdam transaction - 83
+    }, class TransactionRecord {
+        id: 382ed3e2-c85a-4a86-b559-8d8b10c2a034
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 67.59005388437009
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12384
+            name: Creditor 12384
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98784
+            name: DebtorName 98784
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 61.44550353124553
+        update: 2020-07-17T16:40:03.871+0000
+        description: Mc Donalds Amsterdam transaction - 84
+    }, class TransactionRecord {
+        id: 21ecd520-aed7-4949-b018-4334aba8f36b
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 108.59227905036133
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12385
+            name: Creditor 12385
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98785
+            name: DebtorName 98785
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 98.72025368214665
+        update: 2020-07-17T16:40:03.871+0000
+        description: Mc Donalds Amsterdam transaction - 85
+    }, class TransactionRecord {
+        id: 574cacac-27dc-4554-8cf3-38bb4c53a0b0
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 100.38892128703823
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12386
+            name: Creditor 12386
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98786
+            name: DebtorName 98786
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 91.26265571548929
+        update: 2020-07-17T16:40:03.871+0000
+        description: Mc Donalds Amsterdam transaction - 86
+    }, class TransactionRecord {
+        id: ef1c6381-915f-4e3b-8729-d42e67064e7b
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 34.58833228629113
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12387
+            name: Creditor 12387
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98787
+            name: DebtorName 98787
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 31.443938442082842
+        update: 2020-07-17T16:40:03.871+0000
+        description: Mc Donalds Amsterdam transaction - 87
+    }, class TransactionRecord {
+        id: b3ffa299-edd2-4714-9a6e-6d8f7db0bf60
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 109.17413555215218
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12388
+            name: Creditor 12388
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98788
+            name: DebtorName 98788
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 99.24921413832016
+        update: 2020-07-17T16:40:03.871+0000
+        description: Mc Donalds Amsterdam transaction - 88
+    }, class TransactionRecord {
+        id: 2833a84a-cdcd-4ff0-b531-061f0a234789
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 89.53122602785983
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12389
+            name: Creditor 12389
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98789
+            name: DebtorName 98789
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 81.39202366169074
+        update: 2020-07-17T16:40:03.872+0000
+        description: Mc Donalds Amsterdam transaction - 89
+    }, class TransactionRecord {
+        id: e05485b9-5dc4-4c36-a1a0-589353034426
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 95.20574423736535
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12390
+            name: Creditor 12390
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98790
+            name: DebtorName 98790
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 86.55067657942304
+        update: 2020-07-17T16:40:03.872+0000
+        description: Mc Donalds Amsterdam transaction - 90
+    }, class TransactionRecord {
+        id: 0c653874-ea0a-4633-910c-7a4e97c4076e
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 9.865417062218038
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12391
+            name: Creditor 12391
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98791
+            name: DebtorName 98791
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 8.968560965652761
+        update: 2020-07-17T16:40:03.872+0000
+        description: Mc Donalds Amsterdam transaction - 91
+    }, class TransactionRecord {
+        id: 2bc0d58f-ca36-421d-8326-f8b019fa0fdf
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 54.69805370587004
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12392
+            name: Creditor 12392
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98792
+            name: DebtorName 98792
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 49.72550336897276
+        update: 2020-07-17T16:40:03.872+0000
+        description: Mc Donalds Amsterdam transaction - 92
+    }, class TransactionRecord {
+        id: 6e348043-31cf-41a9-9b64-3b3e8d64d03d
+        accountId: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        exchangeRate: class TransactionRecordExchangeRate {
+            currencyFrom: EUR
+            currencyTo: USD
+            rate: 1.1
+        }
+        originalAmount: class TransactionRecordOriginalAmount {
+            amount: 19.205176872203094
+            currency: USD
+        }
+        creditor: class TransactionRecordCreditor {
+            maskedPan: XXXXXXXXXX12393
+            name: Creditor 12393
+        }
+        debtor: class TransactionRecordDebtor {
+            maskedPan: XXXXXXXXXX98793
+            name: DebtorName 98793
+        }
+        status: BOOKED
+        currency: EUR
+        amount: 17.45925170200281
+        update: 2020-07-17T16:40:03.872+0000
+        description: Mc Donalds Amsterdam transaction - 93
+    }]
+},[]>
+2020-07-17 18:40:04.039  INFO LIV19424 [.1-20580-exec-1] i.r.i.m.TimeTakenMonitor                 : Method: ResponseEntity it.reply.ingmanager.server.TransactionsApiController.transactions() - Time taken: PT0.367S
+2020-07-17 18:40:11.045  INFO LIV19424 [.1-20580-exec-2] i.r.i.m.InputOutputMonitor               : Request - Method: ResponseEntity it.reply.ingmanager.server.AccountsApiController.accounts() Values: 
+2020-07-17 18:40:11.114  INFO LIV19424 [.1-20580-exec-2] i.r.i.m.InputOutputMonitor               : Response - <200 OK OK,class AccountsResponse {
+    class Response {
+        code: 200
+        message: OK
+        details: null
+    }
+    accountsList: [class AccountRecord {
+        id: 8269aeab-bd27-4de4-b205-f4be7c0d626e
+        update: 2020-07-17T16:40:11.102+0000
+        name: Account-ionescu
+        product: Gold account.
+        status: ENABLED
+        typeAccount: CREDIT_CARD
+        balance: 7747.376925227005
+    }]
+},[]>
+2020-07-17 18:40:11.114  INFO LIV19424 [.1-20580-exec-2] i.r.i.m.TimeTakenMonitor                 : Method: ResponseEntity it.reply.ingmanager.server.AccountsApiController.accounts() - Time taken: PT0.069S
